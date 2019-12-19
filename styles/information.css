@@ -1,0 +1,142 @@
+/**********Body***************/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b";
+  }
+  
+  .menu {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-between;
+    height: 90vh;
+  }
+  
+  .opcion { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .opcion i{
+    font-size: 3em;
+    margin-right: 15px;
+  }
+  
+  .opcion h3 a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .cuerpo {
+    grid-area: b;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    box-sizing: border-box;
+    background: none;
+  }
+
+  .title h2{
+    font-size: 32px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background: none;
+  }
+
+  .title p{
+    text-align: center;
+  padding-bottom: 40px;
+  color: #b3b3b3;
+  background: none;
+  text-align: center;
+  }
+
+  .team {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .member{
+    text-align: center; 
+    margin-bottom: 20px;
+    background: none;
+  }
+
+  .member .pic {
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 260px;
+    background: none;
+  }
+
+  .member .pic img {
+    height: 260px;
+    border-radius: 10px;
+  }
+  
+  .member h4{
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;  
+    background: none;
+  }
+
+  .member span{
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    background: none;
+  }
+
+  .member .social {
+    margin-top: 15px;
+    background: none;
+  }
+
+  .social a {
+    color: #b3b3b3;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: none;
+  }
+
+  .social a i{
+    background: none;
+  }
+  
+  .social a i:hover{
+    color: #00BCD4;
+    font-size: 120%;
+  }
+  
+  #menu-opcion:hover  {
+      color: rgba(255, 218, 98, 0.6);
+      font-size: 1.2em;
+  }
+  
+  #menu-opcion a:hover {
+    background: floralwhite;
+    color: black;
+    border-radius: 10px;
+  }
+  
+    

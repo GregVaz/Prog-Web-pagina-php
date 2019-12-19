@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Calistoga&display=swap');
+* {
+    background: #00BCD4;
+    font-family: 'Alatsi', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*=========== Navbar ====================*/
+
+.cabezera {
+    background: #194D54;
+    opacity: 66%;
+    height: 7vh;
+    overflow: auto;
+    line-height: 65px;
+    padding-left: 2vw;
+    padding-right: 8vw;
+}
+
+.cabezera h2{
+    color: white;
+    background: #194D5f;
+    opacity: 100%;
+    width: min-content;
+}
+
+
+/*=========== SEction ====================*/
+
+.cuerpo-background {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 450px;
+    background: rgba(230, 230, 230, 0.9) ;
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm h2 {
+    background: none;
+    position: absolute;
+    top: 35vh;
+    bottom: 66vh;
+    color: black;
+    font-size: 2em;
+    font-family: 'Calistoga', cursive;
+}
+
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.loginForm form p{
+    background: none;
+    background: white;
+    margin-bottom: 10%;
+    border-radius: 8px;
+}
+
+.loginForm input{
+    padding: 1em 8em 1em 0.5em;
+    border-radius: 8px;
+    background: whitesmoke;
+}
+
+.loginForm #boton {
+    margin-bottom: 2em;
+}
+
+.loginForm .fieldsForm {
+    background: none;
+}
+
+.loginForm > p {
+    background: none;
+}
+
+.loginForm a {
+    background: none;
+    text-decoration: none;
+    color: lightslategrey;
+    font-size: 0.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

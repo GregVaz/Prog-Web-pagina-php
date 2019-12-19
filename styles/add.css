@@ -1,0 +1,140 @@
+/**********Body***************/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b";
+  }
+  
+  .menu {
+    
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-between;
+    height: 90vh;
+  }
+  
+  .opcion { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .opcion i{
+    font-size: 3em;
+    margin-right: 15px;
+  }
+  
+  .opcion h3 a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .cuerpo {
+    grid-area: b;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: none;
+  }
+  
+  form .datos {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: none;
+  }
+
+  .informacion {
+    margin: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+
+  .informacion label{
+    background: none;
+  }
+
+  .informacion input, .informacion select{
+    background: none;
+    font-size: 16px;
+    padding: 0.4em;
+    border-radius: 5px;
+  }
+
+  .informacion select option {
+    background: none;
+  }
+
+  .categoria {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categoria label{
+    width: min-content;
+  }
+
+  .categoria input {
+    width: min-content;
+    margin-right: 5em;
+  }
+  
+  #sinopsis input{
+    padding-bottom: 100px; 
+  }
+
+  form .carga-imagen {
+    width: 40%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carga-imagen input{
+    margin-top: 40px;
+    background: none;
+    padding: 10px;
+  }
+
+  #guardar {
+    background: lightskyblue;
+    padding: 1.5em 1em 1.5em 1em;
+    border-radius: 10px;
+  }
+
+  #descartar {
+    background: lightcoral;
+    padding: 1.5em 2em 1.5em 2em;
+    border-radius: 10px;
+  }
+
+  #menu-opcion:hover  {
+      color: rgba(255, 218, 98, 0.6);
+      font-size: 1.2em;
+  }
+  
+  #menu-opcion a:hover {
+    background: floralwhite;
+    color: black;
+    border-radius: 10px;
+  }
+  
+    

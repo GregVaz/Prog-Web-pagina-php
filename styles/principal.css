@@ -1,0 +1,165 @@
+/**********Body***************/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b"
+      "a b b b b b b b";
+  }
+  
+  .menu {
+    grid-area: a;
+    background: #00BCD4;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-between;
+    height: 90vh;
+  }
+  
+  .opcion { 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .opcion i{
+    font-size: 3em;
+    margin-right: 15px;
+  }
+  
+  .opcion h3 a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .cuerpo {
+    grid-area: b;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lista {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px 0px 10px 0;
+      background: none;
+  }
+  
+  .control {
+      height: 90%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+  }
+  
+  .pagination {
+      display: flex;
+      list-style-type: none;
+      background: none;
+  }
+
+  .pagination-item {
+    margin: 0.5em;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .pagination-item a {
+    text-decoration: none;
+    background: white;
+    color: black;
+  }
+  
+  .active {
+      margin: 0.5em;
+      border: 1px solid slategrey;
+      padding: 5px 10px 5px 10px;
+      border-radius: 8px;
+      background: rgb(251, 255, 9);
+  }
+  
+  .active a {
+      text-decoration: none;
+      background: none;
+      color: black;
+  }
+  
+  
+  #menu-opcion:hover  {
+      color: rgba(255, 218, 98, 0.6);
+      font-size: 1.2em;
+  }
+  
+  #menu-opcion a:hover {
+    background: floralwhite;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  
+  .containered {
+      position: relative;
+      background: none;
+    }
+    
+    .image {
+      opacity: 1;
+      display: block;
+      width: 250px;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .middle {
+      background: none;
+      display: flex;
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+  
+    .button {
+      margin: 0 10px 0 10px;
+    }
+  
+    #actualizar {
+      padding: 10px 20px 10px 20px;
+      border-radius: 5px;
+      background: skyblue;
+    }
+  
+    #eliminar {
+      padding: 10px 25px 10px 25px;
+      border-radius: 5px;
+      background: rgb(247, 82, 22);
+    }
+    
+    .containered:hover .image {
+      opacity: 0.7;
+    }
+    
+    .containered:hover .middle {
+      opacity: 1;
+    }
+    
+    .text {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }

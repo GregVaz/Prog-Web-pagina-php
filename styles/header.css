@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+
+* {
+    background: #00BCD4;
+    font-family: 'Alatsi', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*=========== Navbar ====================*/
+
+header {
+    background: rgba(25,77,84, 0.6);
+    overflow: auto;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 2vw;
+    padding-right: 8vw;
+}
+
+.titulo{
+    float: left;
+    background: rgba(25,77,84, 0.4);
+    border-radius: 10px;
+}
+
+.titulo h2{
+    background: none;
+    width: min-content;
+}
+
+.titulo h2 a{
+  background: none;
+  text-decoration: none;
+  color: white;
+  opacity: 100%;
+  width: min-content;
+}
+
+.area-notificacion {
+    display: flex;
+    flex-direction: row-reverse;
+    background: none;
+}
+
+.item {
+  background: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  color: white;
+}
+
+.item a{
+  background: none;
+}
+
+.item i{
+  background: none;
+}
+
+.item .arrow{
+  color: black;
+}
+
+.contenedor {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 85vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.notfound h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 2em;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 700;
+  background-color: white;
+  color: #000;
+  border-radius: 40px;
+  text-decoration: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 115px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 86px;
+  }
+  .notfound .notfound-404 h1>span {
+    width: 86px;
+    height: 86px;
+  }
+}
+
+/***************Footer**************/
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 3px solid white;
+}
